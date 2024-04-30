@@ -1,0 +1,32 @@
+[
+        {
+                "id": 1,
+                "title": "1. Munkakörnyezet és Munkaeszközök",
+                "body": "1.1 Az irodai munkahely legyen rendezett, tiszta és biztonságos.",
+                "body2": "1.2 Minden munkavállaló számára biztosítottak legyenek megfelelően ergonomikus munkaállomások és munkaeszközök."
+        },
+        {
+                "id": 2,
+                "title": "2. Vészjelzés és Elsősegélynyújtás",
+                "body": "2.1 Az irodában jól látható helyeken helyezzünk el vészjelzési táblákat és tervet.",
+                "body2": "2.2 Minden munkavállalónak ismernie kell a vészjelzéseket és a helyi elsősegélynyújtás protokollját."
+        },
+        {
+                "id": 3,
+                "title": "3. Tűzvédelem",
+                "body": "3.1 Az irodában tartsuk be a tűzvédelmi előírásokat, beleértve a tűzoltókészülékek helyes használatát és az evakuációs gyakorlatokat.",
+                "body2": "3.2 Minden alkalmazottnak rendszeresen részt kell vennie tűzvédelmi oktatásokon és gyakorlatokon."
+        },
+        {
+                "id": 4,
+                "title": "4. Munkabiztonság",
+                "body": "4.1 Az irodai munkahelyen ügyeljünk az elektromos berendezések helyes használatára és a kábelek rendezett elhelyezésére.",
+                "body2": "4.2 Élelmiszer- és italfogyasztás esetén használjunk kijelölt helyiségeket, hogy minimalizáljuk az esetleges baleseteket és szennyeződéseket."
+        },
+        {
+                "id": 5,
+                "title": "5. Kommunikáció és Felvilágosítás",
+                "body": "5.1 Rendszeresen tájékoztassuk és képezzük a munkavállalókat a munkahelyi biztonsági előírásokról és a szabályzatban foglaltakról.",
+                "body2": "5.2 Nyitottak legyünk a munkavállalók észrevételeire és javaslataira a munkahelyi biztonság javítása érdekében."
+        }
+]
