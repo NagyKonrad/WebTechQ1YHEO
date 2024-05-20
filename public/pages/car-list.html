@@ -1,12 +1,7 @@
 <body>
-
-
-
         <script src="video.js"></script>
 
-        <h2>Céges autók</h2>
-
-        <table id="car-list">
+        <table id="car-list" , class="styled-table">
                 <tr>
                         <th>#</th>
                         <th>Név</th>
@@ -18,19 +13,29 @@
         <br>
 
         <div>
-                <table>
-                        <thead>
-                                <video id="video" autoplay muted loop width="500"
-                                        src="3066463-uhd_4096_2160_24fps.mp4.crdownload">
-                                </video>
-                        </thead>
-                        <tbody>
-                                <button onclick="playVideo()">Lejátszás</button>
-                                <button onclick="pauseVideo()">Megállj!</button>
-                                <button onclick="stopVideo()">Újraindítás</button>
-                                <button onclick="setVolume(1)">Hangerőszanályozó</button>
-                                <button onclick="muteVideo()">Némítás</button>
-                        </tbody>
+                <table class="styled-table">
+                        <tr>
+                                <th>
+                                        <video id="video" autoplay muted loop width="500"
+                                                src="3066463-uhd_4096_2160_24fps.mp4.crdownload">
+                                        </video>
+                                </th>
+                                <th>
+                                        <button onclick="playVideo()">Lejátszás</button>
+                                </th>
+                                <th>
+                                        <button onclick="pauseVideo()">Megállj!</button>
+                                </th>
+                                <th>
+                                        <button onclick="stopVideo()">Újraindítás</button>
+                                </th>
+                                <th>
+                                        <button onclick="setVolume(1)">Hangerőszanályozó</button>
+                                </th>
+                                <th>
+                                        <button onclick="muteVideo()">Némítás</button>
+                                </th>
+                        </tr>
                 </table>
         </div>
 

@@ -1,151 +1,223 @@
 body {
-        margin: 0;
-}
-
-#navbar {
-        background-color: rgb(255, 255, 255);
-        border: 10px solid rgb(0, 75, 224);
-}
-
-#navbar ul {
-        margin-top: 0;
-        list-style-type: none;
-        min-height: 10px;
-        padding-top: 10px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-}
-
-#navbar ul li {
-        margin-left: 20px;
-}
-
-#content {
-        margin: 15px;
-}
-
-table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-}
-
-th, td {
-        padding: 4px;
+  margin: 0;
+  background: #c5c3c6;
 }
 
 .form-input {
-        margin-bottom: 4px;;
+  margin-bottom: 4px;
 }
 
 .error-message {
-        margin: 4px;
-        color: red;
+  margin: 4px;
+  color: red;
 }
 
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
-body {
-  margin:0;
+/* Táblázat szépítés */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto
 }
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+/* Menü szépítés */
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 1800px;
+  height: 100px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 300px;
+}
+a:nth-child(2) {
+  width: 300px;
+}
+a:nth-child(3) {
+  width: 300px;
+}
+a:nth-child(4) {
+  width: 300px;
+}
+a:nth-child(5) {
+  width: 300px;
+}
+a:nth-child(6) {
+  width: 300px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 300px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 300px;
+  left: 300px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 300px;
+  left: 600px;
+  background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 300px;
+  left: 900px;
+  background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 300px;
+  left: 1200px;
+  background-color: #e67e22;
+}
+nav .start-contact, a:nth-child(6):hover~.animation {
+  width: 300px;
+  left: 1500px;
+  background-color: #34ac24;
+}
+
 
 h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:48px;
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Cherry Swash', cursive;
 }
+
 p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
 }
 
-.header {
-  position:relative;
-  text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
-}
-.logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
+span {
+    color: #2BD6B4;
 }
 
-.inner-header {
-  height:65vh;
-  width:100%;
-  margin: 0;
+/* Űrlap szépítés */
+.createUser-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(237, 237, 237, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.createUser-box h2 {
+  margin: 0 0 30px;
   padding: 0;
-}
-
-.flex { /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #000000;
   text-align: center;
 }
 
-.waves {
-  position:relative;
+.createUser-box .user-box {
+  position: relative;
+}
+
+.createUser-box .user-box input {
   width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+}
+.createUser-box .user-box label {
+  position: relative;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000000;
+  pointer-events: none;
+  transition: .5s;
 }
 
-.content {
-  position:relative;
-  height:20vh;
-  text-align:center;
-  background-color: white;
+.createUser-box .user-box input:focus ~ label,
+.createUser-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
 }
 
-/* Animation */
-
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
-}
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
+.createUser-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
 }

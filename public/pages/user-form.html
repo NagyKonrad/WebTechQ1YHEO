@@ -1,42 +1,45 @@
-<form>
-        <div class="form-input">
-                <label for="name">Név:</label>
-                <input type="text" id="name">
-        </div>
+<div class="createUser-box">
+        <h2>Új felhasználó létrehozása</h2>
+        <form>
+                        <div class="user-box">
+                                <label for="name">Név:</label>
+                                <input type="text" id="name">
+                        </div>
 
-        <div class="form-input">
-                <label for="address">Lakcím:</label>
-                <input type="text" id="address">
-        </div>
+                        <div class="user-box">
+                                <label for="address">Lakcím:</label>
+                                <input type="text" id="address">
+                        </div>
 
-        <div class="form-input">
-                Nem:
-                <input type="radio" id="male" name="gender">
-                <label for="male">Férfi</label>
+                        <div class="form-input">
+                                Nem:
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Férfi</label>
 
-                <input type="radio" id="female" name="gender">
-                <label for="male">Nő</label>
-        </div>
+                                <input type="radio" id="female" name="gender">
+                                <label for="male">Nő</label>
+                        </div>
 
-        <div class="form-input">
-                <label for="birthday">Születési idő:</label>
-                <input type="text" id="birthday">
-        </div>
+                        <div class="user-box">
+                                <label for="birthday">Születési idő:</label>
+                                <input type="text" id="birthday">
+                        </div>
 
-        <div class="form-input">
-                <label for="children">Gyermekek:</label>
-                <input type="number" id="children">
-        </div>
+                        <div class="user-box">
+                                <label for="children">Gyermekek:</label>
+                                <input type="number" id="children">
+                        </div>
 
-        <div class="form-input">
-                <label for="homeoffice">Távmunka:</label>
-                <input type="checkbox" id="homeoffice">
-        </div>
-        <div class="form-input">
-                <label for="car">Autó:</label>
-                <select id="car">
-                </select>
-        </div>
-</form>
+                        <div class="form-input">
+                                <label for="homeoffice">Távmunka:</label>
+                                <input type="checkbox" id="homeoffice">
+                        </div>
+                        <div class="form-input">
+                                <label for="car">Autó:</label>
+                                <select id="car">
+                                </select>
+                        </div>
+        </form>
+        <button onclick="saveUser()">Mentés</button>
+</div>
 
-<button onclick="saveUser()">Mentés</button>
